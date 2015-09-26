@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
+            <connections>
+                <outlet property="chatButton" destination="hIv-WM-yxj" id="YNH-zu-ptV"/>
+                <outlet property="label" destination="dtL-iM-m0L" id="giB-sc-cT4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="c3l-9u-x9I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainMenu" translatesAutoresizingMaskIntoConstraints="NO" id="f7J-Do-rJk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-2I-g1i">
+                    <rect key="frame" x="45" y="253" width="245" height="62"/>
+                    <state key="normal" image="loginButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="apiSectionAction:" destination="-1" eventType="touchUpInside" id="E1z-6c-yAP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-gC-vJF">
+                    <rect key="frame" x="45" y="320" width="245" height="60"/>
+                    <state key="normal" image="animationButton">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animationSectionAction:" destination="-1" eventType="touchUpInside" id="x0r-AK-Kgg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-WM-yxj">
+                    <rect key="frame" x="45" y="188" width="245" height="60"/>
+                    <state key="normal" title="" image="chatButton"/>
+                    <connections>
+                        <action selector="tableSectionAction:" destination="-1" eventType="touchUpInside" id="3Sa-RA-4sY"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQe-PK-eJg">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <color key="barTintColor" red="0.17254901959999999" green="0.27058823529999998" blue="0.33725490200000002" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-iM-m0L" customClass="CustomFontOne">
+                    <rect key="frame" x="114" y="204" width="46" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-gG-nUC" customClass="CustomFontOne">
+                    <rect key="frame" x="114" y="270" width="54" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4j-JD-QMO" customClass="CustomFontOne">
+                    <rect key="frame" x="114" y="336" width="142" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding Tasks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgL-dS-beQ" userLabel="Coding Tasks" customClass="CustomHeaderFont">
+                    <rect key="frame" x="101" y="36" width="119" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dtL-iM-m0L" firstAttribute="leading" secondItem="1Da-gG-nUC" secondAttribute="leading" id="3TK-TD-8aS"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="top" secondItem="dyY-2I-g1i" secondAttribute="bottom" constant="5" id="6Ie-KO-slP"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="hIv-WM-yxj" secondAttribute="leading" id="6VK-ye-ZMN"/>
+                <constraint firstItem="GgL-dS-beQ" firstAttribute="top" secondItem="nQe-PK-eJg" secondAttribute="bottom" constant="40" id="6cY-EM-WSr"/>
+                <constraint firstAttribute="centerX" secondItem="dyY-2I-g1i" secondAttribute="centerX" id="6sZ-kX-UFx"/>
+                <constraint firstItem="dtL-iM-m0L" firstAttribute="centerY" secondItem="hIv-WM-yxj" secondAttribute="centerY" id="748-g2-LOB"/>
+                <constraint firstItem="f7J-Do-rJk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8VX-Li-jI2"/>
+                <constraint firstItem="dtL-iM-m0L" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="top" constant="16" id="8lH-Rz-CDu"/>
+                <constraint firstItem="nQe-PK-eJg" firstAttribute="top" secondItem="GgL-dS-beQ" secondAttribute="bottom" constant="-40" id="9tF-u0-e8Z"/>
+                <constraint firstItem="j4j-JD-QMO" firstAttribute="top" secondItem="u8J-gC-vJF" secondAttribute="top" constant="16" id="B2l-rg-fhO"/>
+                <constraint firstItem="f7J-Do-rJk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Br0-pd-X7p"/>
+                <constraint firstItem="dtL-iM-m0L" firstAttribute="bottom" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="-17" id="Ciz-6G-nOt"/>
+                <constraint firstItem="nQe-PK-eJg" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="20" id="Ed4-lh-8Cf"/>
+                <constraint firstAttribute="bottom" secondItem="f7J-Do-rJk" secondAttribute="bottom" id="H0Y-B7-Chx"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="leading" secondItem="j4j-JD-QMO" secondAttribute="trailing" constant="-120" id="MpZ-YD-Of3"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="trailing" secondItem="u8J-gC-vJF" secondAttribute="trailing" id="OJh-9E-wZL"/>
+                <constraint firstAttribute="centerY" secondItem="dyY-2I-g1i" secondAttribute="centerY" id="RmP-hb-OGV"/>
+                <constraint firstAttribute="centerX" secondItem="GgL-dS-beQ" secondAttribute="centerX" id="S3s-TZ-rjq"/>
+                <constraint firstItem="GgL-dS-beQ" firstAttribute="leading" secondItem="nQe-PK-eJg" secondAttribute="trailing" constant="-181" id="TFj-7f-F07"/>
+                <constraint firstItem="nQe-PK-eJg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="TZG-yu-rFt"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="u8J-gC-vJF" secondAttribute="leading" id="UON-jj-ie5"/>
+                <constraint firstItem="j4j-JD-QMO" firstAttribute="bottom" secondItem="u8J-gC-vJF" secondAttribute="bottom" constant="-17" id="WXN-cv-SUM"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="trailing" secondItem="hIv-WM-yxj" secondAttribute="trailing" id="Ywf-Tj-uQC"/>
+                <constraint firstAttribute="trailing" secondItem="f7J-Do-rJk" secondAttribute="trailing" id="Z4T-km-zX7"/>
+                <constraint firstItem="f7J-Do-rJk" firstAttribute="top" secondItem="nQe-PK-eJg" secondAttribute="bottom" constant="20" id="Zs7-jl-bro"/>
+                <constraint firstItem="f7J-Do-rJk" firstAttribute="leading" secondItem="dtL-iM-m0L" secondAttribute="trailing" constant="-151" id="Zs9-xr-Ut7"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="1Da-gG-nUC" secondAttribute="top" constant="-17" id="Zyl-ok-xgo"/>
+                <constraint firstItem="GgL-dS-beQ" firstAttribute="bottom" secondItem="nQe-PK-eJg" secondAttribute="bottom" constant="231" id="c8G-6p-1Pd"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="bottom" secondItem="1Da-gG-nUC" secondAttribute="bottom" constant="18" id="cWH-5v-Veh"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="centerX" secondItem="f7J-Do-rJk" secondAttribute="centerX" constant="7" id="i3g-L2-Zji"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="1Da-gG-nUC" secondAttribute="trailing" constant="-120" id="iZE-Yt-wDu"/>
+                <constraint firstItem="f7J-Do-rJk" firstAttribute="centerX" secondItem="u8J-gC-vJF" secondAttribute="centerX" id="lbs-eh-i7N"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="5" id="nvj-Nb-fIk"/>
+                <constraint firstAttribute="trailing" secondItem="nQe-PK-eJg" secondAttribute="trailing" id="oKw-8C-uaL"/>
+                <constraint firstItem="j4j-JD-QMO" firstAttribute="leading" secondItem="1Da-gG-nUC" secondAttribute="leading" constant="14" id="she-vT-4Pg"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="dtL-iM-m0L" secondAttribute="trailing" constant="-115" id="ueK-pL-l1T"/>
+                <constraint firstItem="j4j-JD-QMO" firstAttribute="leading" secondItem="1Da-gG-nUC" secondAttribute="leading" id="wQ9-tl-1oY"/>
+                <constraint firstItem="nQe-PK-eJg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zEH-di-i6e"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Zs7-jl-bro"/>
+                    <exclude reference="Zs9-xr-Ut7"/>
+                    <exclude reference="Ed4-lh-8Cf"/>
+                    <exclude reference="6cY-EM-WSr"/>
+                    <exclude reference="TFj-7f-F07"/>
+                    <exclude reference="c8G-6p-1Pd"/>
+                    <exclude reference="748-g2-LOB"/>
+                    <exclude reference="iZE-Yt-wDu"/>
+                    <exclude reference="MpZ-YD-Of3"/>
+                    <exclude reference="she-vT-4Pg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="animationButton" width="245" height="54"/>
+        <image name="chatButton" width="245" height="54"/>
+        <image name="loginButton" width="245" height="56"/>
+        <image name="mainMenu" width="320" height="568"/>
+    </resources>
+</document>
